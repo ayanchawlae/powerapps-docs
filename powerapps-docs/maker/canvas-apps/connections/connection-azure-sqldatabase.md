@@ -25,7 +25,7 @@ Connect to SQL Server, in either Azure or an on-premises database, so that you c
 ## Prerequisites
 
 * [Sign up](../../signup-for-powerapps.md) for Power Apps, and then [sign in](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) by providing the same credentials that you used to sign up.
-* Gather the following information for a database that contains at least one table with a primary key:
+* Gather the following information for a database that contains at least one table with a **primary key**:
   
   * the name of the database
   * the name of the server on which the database is hosted
@@ -34,6 +34,9 @@ Connect to SQL Server, in either Azure or an on-premises database, so that you c
     
     If you don't have this information, ask the administrator of the database that you want to use.
 * For an on-premises database, identify a [data gateway](../gateway-management.md) that was shared with you (or create one).
+
+> [!NOTE] 
+> If you don't use a primary key in the table, then the editform(form type in powerapps) option still works but its control type will be only *view text*. And you won't be able to write back the data to sql.
 
 ## Generate an app automatically
 
